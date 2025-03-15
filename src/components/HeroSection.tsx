@@ -14,8 +14,9 @@ const HeroSection = () => {
               className="object-contain"
               style={{ width: '100%', height: 'auto' }} 
             />
+            <h1 className="w-full text-left text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+              Hey, I'm <span className="bg-gradient-to-r from-[var(--strong-purple)] to-[var(--steel-gray)] text-transparent bg-clip-text">Sara Catalano</span> – Full Stack Software and Web Engineer.</h1>
           </div>
-        <h1>Hey, I'm Sara Catalano – Full Stack Software and Web Engineer.</h1>
       </header>
     );
 };
