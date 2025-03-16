@@ -11,8 +11,21 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="flex flex-col items-center justify-center" style={{ height: "100vh" }}>
-      <div className="relative w-[280px] sm:w-[500px] md:w-[600px] lg:w-[700px] pb-4">
+    <header className="flex flex-col items-center" style={{ height: "100vh" }}>
+      <div className="flex flex-col items-center pt-16">
+        <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] rounded-full overflow-hidden mb-4">
+          <Image
+            src="/img/sara-profile-image.jpg"
+            alt="Profile picture"
+            width={300}
+            height={300}
+            priority
+            className="object-contain drop-shadow-lg"
+          />
+        </div>
+      </div>
+      
+      <div className="relative w-[280px] sm:w-[500px] md:w-[600px] lg:w-[700px] pb-4 mt-16">
         <Image
           src="/img/sara-croft-logo.svg"
           alt="My Portfolio Logo"
@@ -22,7 +35,7 @@ const HeroSection = () => {
           className="object-contain drop-shadow-lg"
           style={{ width: "100%", height: "auto" }}
         />
-        <h1 className="w-full text-left text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+        <h1 className="w-full text-left text-lg sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl">
           <span className="bg-gradient-to-r from-[var(--strong-purple)] to-[var(--dark-steel)] text-transparent bg-clip-text">
             <TypeAnimation
               sequence={["Full Stack Software and Web Engineer"]}
