@@ -1,5 +1,3 @@
-import React from "react";
-
 const Contact = () => {
     return (
         <div className="flex" style={{height: "100vh"}}>

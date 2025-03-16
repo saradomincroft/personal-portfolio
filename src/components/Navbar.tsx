@@ -1,10 +1,13 @@
-import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
     return (
-        <div className="flex" style={{height: "100vh" }}>
+        <nav>
+            <div className="flex flex-wrap items-center justify-between mx-auto p-8">
+
+            </div>
             
-        </div>
+        </nav>
     )
 }
 
