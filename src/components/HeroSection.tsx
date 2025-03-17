@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <header className="flex flex-col items-center" style={{ height: "100vh" }}>
       <div className="flex flex-col items-center pt-16">
-        <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] rounded-full overflow-hidden mb-4">
+        <div className="relative w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] rounded-full overflow-hidden mb-4">
           <Image
             src="/img/sara-profile-image.jpg"
             alt="Profile picture"
@@ -25,7 +25,7 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <div className="relative w-[280px] sm:w-[500px] md:w-[600px] lg:w-[700px] pb-4 mt-16">
+      <div className="relative w-[280px] sm:w-[500px] md:w-[600px] lg:w-[700px] mt-16">
         <Image
           src="/img/sara-croft-logo.svg"
           alt="My Portfolio Logo"
@@ -35,7 +35,7 @@ const HeroSection = () => {
           className="object-contain drop-shadow-lg"
           style={{ width: "100%", height: "auto" }}
         />
-        <h1 className="w-full text-left text-lg sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl">
+        <h1 className="w-full text-left text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl mb-16">
           <span className="bg-gradient-to-r from-[var(--strong-purple)] to-[var(--dark-steel)] text-transparent bg-clip-text">
             <TypeAnimation
               sequence={["Full Stack Software and Web Engineer"]}
@@ -46,11 +46,12 @@ const HeroSection = () => {
           </span>
         </h1>
       </div>
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center">
         <button
           onClick={scrollToAboutSection}
-          className="mt-12 flex flex-col items-center justify-center"
-        >
-         <svg
+          className="pt-8 flex flex-col items-center justify-center"
+          >
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="80"
@@ -61,10 +62,11 @@ const HeroSection = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             className="white animate-bounce cursor-pointer"
-          >
-            <path d="M12 19V6M12 19l-7-7M12 19l7-7" />
-          </svg>        
-        </button>
+            >
+              <path d="M12 19V6M12 19l-7-7M12 19l7-7" />
+            </svg>        
+          </button>
+        </div>
     </header>
   );
 };

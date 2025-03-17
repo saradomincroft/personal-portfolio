@@ -16,8 +16,8 @@
 
 body {
   background: linear-gradient(45deg, var(--cool-purple), var(--muted-green), var(--vibrant-orange));
-  background-size: 300% 300%;
-  animation: gradientBackground 10s ease infinite;
+  background-size: 150% 150%;
+  animation: gradientBackground 5s ease infinite;
   color: var(--white);
   font-family: 'Roboto', sans-serif;
 }
