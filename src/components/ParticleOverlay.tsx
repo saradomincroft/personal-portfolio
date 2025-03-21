@@ -29,6 +29,8 @@ const ParticleOverlay = () => {
                 const color = Math.random() > 0.5 ? 'rgba(205, 167, 91, 0.8)' : 'rgba(176, 190, 197, 0.8)';
                 particle.style.backgroundColor = color;
                 particle.style.opacity = '0';         
+
+                particle.style.transition = 'opacity 1s ease-in-out, filter 1s ease-in-out'; 
                 
                 const duration = 15 + Math.random() * 10;
                 particle.style.animation = `particleMove ${duration}s infinite linear`;
