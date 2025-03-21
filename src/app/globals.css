@@ -15,7 +15,7 @@
 }
 
 body {
-  background: linear-gradient(45deg, var(--cool-purple), var(--muted-green), var(--vibrant-orange));
+  background: linear-gradient(45deg, var(--vibrant-orange), var(--muted-green), var(--cool-purple));
   background-size: 150% 150%;
   animation: gradientBackground 5s ease infinite;
   color: var(--white);
