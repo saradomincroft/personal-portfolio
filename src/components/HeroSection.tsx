@@ -1,4 +1,5 @@
 "use client";
+import ParticleOverlay from "./ParticleOverlay";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
@@ -11,19 +12,8 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="flex flex-col items-center" style={{ height: "100vh" }}>
-      <div className="flex flex-col items-center pt-16">
-        <div className="relative w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] rounded-full overflow-hidden mb-4">
-          <Image
-            src="/img/sara-profile-image.jpg"
-            alt="Profile picture"
-            width={300}
-            height={300}
-            priority
-            className="object-contain drop-shadow-lg"
-          />
-        </div>
-      </div>
+    <header className="flex flex-col items-center justify-center" style={{ height: "100vh" }}>
+      <ParticleOverlay/>
       <div className="relative w-[280px] sm:w-[500px] lg:w-[600px]">
         <Image
           src="/img/sara-croft-logo.svg"
