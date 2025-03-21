@@ -24,8 +24,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      
-      <div className="relative w-[280px] sm:w-[500px] md:w-[600px] lg:w-[700px] mt-16">
+      <div className="relative w-[280px] sm:w-[500px] lg:w-[600px]">
         <Image
           src="/img/sara-croft-logo.svg"
           alt="My Portfolio Logo"
