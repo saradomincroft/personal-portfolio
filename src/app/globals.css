@@ -71,3 +71,31 @@ body {
   }
 }
 
+.hero-logo {
+  animation: fadeInLogo 1s ease-out forwards; /* Added fade-in duration */
+}
+
+.hero-typing {
+  animation: typingEffect 10s 1s forwards; /* Delay typing animation to start after logo fades in */
+}
+
+@keyframes fadeInLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typingEffect {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+
