@@ -8,6 +8,7 @@ const HeroSection = () => {
   const [typingStarted, setTypingStarted] = useState(false);
   const [typingCompleted, setTypingCompleted] = useState(false);
   const [arrowVisible, setArrowVisible] = useState(false);
+  const [iconsVisibile, setIconsVisible] = useState(false);
 
   useEffect(() => {
     const typingTimer = setTimeout(() => {
@@ -21,17 +22,25 @@ const HeroSection = () => {
 
   useEffect(() => {
     if (typingStarted) {
-      const typingDuration = 2000;
+      const typingDuration = 2500;
       const typingCompletionTimer = setTimeout(() => {
         setTypingCompleted(true);
-        setTimeout(() => {
-          setArrowVisible(true); 
-        }, 300);
+        requestAnimationFrame(() => setArrowVisible(true));
       }, typingDuration);
       return () => clearTimeout(typingCompletionTimer);
     }
   }, [typingStarted]);
-
+  
+  useEffect(() => {
+    if (typingCompleted) {
+      const showIconsTimer = setTimeout(() => {
+        setIconsVisible(true);
+      }, 300);
+  
+      return () => clearTimeout(showIconsTimer);
+    }
+  }, [typingCompleted]);
+  
   const scrollToAboutSection = () => {
     const aboutSection = document.getElementById("about-section");
     if (aboutSection) {
@@ -77,8 +86,49 @@ const HeroSection = () => {
             )}
           </span>
         </h1>
+        {typingCompleted && (
+          <div
+            className={`relative flex mt-2 gap-4 transition-opacity duration-700 ease-out ${
+              iconsVisibile ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <div className="relative w-[48px] h-[48px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110">
+              <Image
+                src="/img/github-icon.svg"
+                alt="GitHub icon"
+                width={150}
+                height={150}
+                priority
+                className="object-contain drop-shadow-lg"
+              />
+            </div>
+            <div className="relative w-[48px] h-[48px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110">
+              <Image
+                src="/img/linkedin-icon.png"
+                alt="LinkedIn icon"
+                width={150}
+                height={150}
+                priority
+                className="object-contain drop-shadow-lg"
+              />
+            </div>
+          </div>
+        )}
       </div>
 
+      {typingCompleted && (
+        <>
+          <div className={`absolute top-24 left-8 transition-transform duration-1000 ease-in-out will-change-transform ${arrowVisible ? "translate-x-0" : "-translate-x-full"}`}>
+            <Image
+              src="/img/sun.svg"
+              alt="Sun"
+              width={100}
+              height={100}
+              className="w-[clamp(80px, 10vw, 120px)] h-[clamp(80px, 10vw, 120px)] object-contain"
+            />
+          </div>
+        </>
+      )}
       <div className="absolute bottom-8 left-0 right-0 flex justify-center">
         {typingCompleted && (
           <button
