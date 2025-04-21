@@ -92,7 +92,7 @@ const HeroSection = () => {
               iconsVisibile ? "opacity-100" : "opacity-0"
             }`}
           >
-            <div className="relative w-[48px] h-[48px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110">
+            <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110">
               <Image
                 src="/img/github-icon.svg"
                 alt="GitHub icon"
@@ -102,7 +102,7 @@ const HeroSection = () => {
                 className="object-contain drop-shadow-lg"
               />
             </div>
-            <div className="relative w-[48px] h-[48px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110">
+            <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110">
               <Image
                 src="/img/linkedin-icon.png"
                 alt="LinkedIn icon"
