@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --cool-purple: #4A3C73;
+  --black: #010101;
+  --white: #F1F1F1;
+  --vibrant-orange: #FF6A00;
+  --muted-green: #4B9F8C;
+  --warm-beige: #CDA75B;
+  --lime-green: #32CD32;
+  --strong-purple: #6A1B9A;
+  --dark-steel: #333333;
+  --light-steel: #B0BEC5;
+}
+
+body {
+  background: linear-gradient(45deg, var(--vibrant-orange), var(--muted-green), var(--cool-purple));
+  background-size: 150% 150%;
+  animation: gradientBackground 5s ease infinite;
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  
+}
+
+.particles-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position:absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  animation: particleMove 20s infinite ease-in-out;
+}
+
+@keyframes particleMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -15px);
+  }
+  50% {
+    transform: translate(-15px, 10px);
+  }
+  75% {
+    transform: translate(30px, 20px);
+  }
+  100% {
+    transform: translate(-25px, -10px);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
