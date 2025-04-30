@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () => {
 
     return (
-        <div id="about-section" className="flex" style={{height: "100vh" }}>
+        <div id="about-section" className="flex pt-16" style={{height: "100vh" }}>
             <h2>About</h2>
                   <div className="flex flex-col items-center pt-16">
                     <div className="relative w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] rounded-full overflow-hidden mb-4">
