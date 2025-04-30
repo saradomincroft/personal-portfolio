@@ -54,7 +54,7 @@ const HeroSection = () => {
 
   return (
     <header id="hero-section" className="flex flex-col items-center justify-center" style={{ height: "100vh" }}>
-      <div className="relative w-3/4 sm:w-[500px] lg:w-[600px]">
+      <div className="relative w-3/4 sm:w-[500px] lg:w-[600px] z-10">
         <Image
           // src="/personal-portfolio/img/sara-croft-logo.svg"
           src="/img/sara-croft-logo.svg"
@@ -119,15 +119,15 @@ const HeroSection = () => {
 
       {typingCompleted && (
         <>
-          <div className={`absolute top-24 left-8 transition-transform duration-1000 ease-in-out will-change-transform ${arrowVisible ? "translate-x-0" : "-translate-x-full"}`}>
-            <Image
-              src="/img/sun.svg"
-              alt="Sun"
-              width={100}
-              height={100}
-              className="w-[clamp(80px, 10vw, 120px)] h-[clamp(80px, 10vw, 120px)] object-contain"
-            />
-          </div>
+        <div className={`absolute top-[8%] left-[2%] transition-transform duration-1000 ease-in-out will-change-transform ${arrowVisible ? "translate-x-0" : "-translate-x-full"}`}>
+          <Image
+            src="/img/astronaut.svg"
+            alt="Astronaut"
+            width={100}
+            height={100}
+            className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] object-contain"
+          />
+        </div>
         </>
       )}
       <div className="absolute bottom-8 left-0 right-0 flex justify-center">
