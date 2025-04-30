@@ -94,7 +94,7 @@ const HeroSection = () => {
           >
             <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110">
               <Image
-                src="/img/github-icon.svg"
+                src="/personal-portfolio/img/github-icon.svg"
                 alt="GitHub icon"
                 width={150}
                 height={150}
