@@ -2,6 +2,7 @@
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://saradomincroft.github.io/personal-portfolio",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build && touch out/.nojekyll",
