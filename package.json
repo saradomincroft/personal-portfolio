@@ -5,7 +5,7 @@
   "homepage": "https://saradomincroft.github.io/personal-portfolio",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && touch out/.nojekyll",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
