@@ -103,7 +103,7 @@ const Navbar = () => {
 
         {/* Hamburger Button */}
         <button
-          className="md:hidden text-3xl"
+          className="md:hidden text-3xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation"
         >
