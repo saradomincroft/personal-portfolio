@@ -22,7 +22,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     if (typingStarted) {
-      const typingDuration = 2500;
+      const typingDuration = 2200;
       const typingCompletionTimer = setTimeout(() => {
         setTypingCompleted(true);
         requestAnimationFrame(() => setArrowVisible(true));
@@ -35,7 +35,7 @@ const HeroSection = () => {
     if (typingCompleted) {
       const showIconsTimer = setTimeout(() => {
         setIconsVisible(true);
-      }, 300);
+      }, 420);
   
       return () => clearTimeout(showIconsTimer);
     }
@@ -71,11 +71,11 @@ const HeroSection = () => {
       </div>
 
       <div className="relative w-3/4 sm:w-[500px] lg:w-[600px] h-[100px]">
-        <h1 className="w-full text-left text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+        <h1 className="w-full text-left text-l md:text-2xl lg:text-3xl xl:text-4xl">
           <span className="bg-gradient-to-r from-[var(--strong-purple)] to-[var(--dark-steel)] text-transparent bg-clip-text">
             {typingStarted && (
               <TypeAnimation
-                sequence={["Full Stack Software and Web Engineer"]}
+                sequence={["Full Stack Engineer | Code Commander of the Digital Galaxy"]}
                 wrapper="span"
                 speed={50}
                 style={{
@@ -119,7 +119,8 @@ const HeroSection = () => {
 
       {typingCompleted && (
         <>
-        <div className={`absolute top-[8%] left-[2%] transition-transform duration-1000 ease-in-out will-change-transform ${arrowVisible ? "translate-x-0" : "-translate-x-full"}`}>
+        <div className={`absolute top-[8%] left-[2%] transition-transform duration-1000 ease-in-out will-change-transform ${
+          arrowVisible ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`}>
           <Image
             src="/img/astronaut.svg"
             alt="Astronaut"
