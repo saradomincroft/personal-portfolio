@@ -33,7 +33,7 @@ const About = () => {
       <h2 className="text-3xl font-bold mb-8">About</h2>
 
       {/* Main Flex Container */}
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-12 max-w-6xl w-full">
+      <div className="flex flex-col items-center justify-center gap-12 w-full max-w-4xl px-6">
         
         {/* Left Column: Image + Bio */}
         <div className="flex flex-col items-center text-center md:text-left md:items-start max-w-sm">
