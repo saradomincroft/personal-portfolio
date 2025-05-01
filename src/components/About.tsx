@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+//todo: add php
 type Tech = {
   title: string;
   imgSrc: string;
@@ -36,7 +36,7 @@ const About = () => {
       <h2 className="text-4xl font-bold mb-8 border-b-2">About</h2>
 
       {/* Main Flex Container */}
-      <div className="flex flex-col items-center justify-center gap-12 w-full max-w-4xl px-6">
+      <div className="flex flex-col items-center justify-center gap-12 w-full max-w-4xl px-2">
         
         {/* Left Column: Image + Bio */}
         <div className="flex flex-col items-center text-center max-w-sm">
@@ -50,7 +50,7 @@ const About = () => {
               className="object-contain drop-shadow-lg"
             />
           </div>
-          <p className="ftext-center text-sm" style={{ color: "#F1F1F1"}}>
+          <p className="text-center text-sm" style={{ color: "#F1F1F1"}}>
           👋 Hi, I’m Sara Catalano—but when I’m diving into code and 
           navigating design challenges, you can call me Sara Croft.
           (Adventurer of bugs, builder of bold ideas).
