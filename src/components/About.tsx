@@ -67,7 +67,7 @@ const About = () => {
       id="about-section"
       className="relative items-center pt-16 px-4 min-h-screen"
     >
-      <h2 className="text-4xl font-bold mb-8 border-b-2">About</h2>
+      <h2 className="text-4xl font-bold mb-8 border-b-2 text-[#F1F1F1] drop-shadow-[0_0_20px_#6A1B9A]">About</h2>
 
       {/* Main Flex Container */}
       <div className="flex flex-col items-center justify-center gap-12 w-full max-w-4xl px-2 mx-auto">
