@@ -70,7 +70,7 @@ const About = () => {
 
       {/* Main Flex Container */}
       <div className="flex flex-col items-center justify-center gap-12 w-full max-w-4xl px-2 mx-auto">
-                
+
         {/* Storm Image */}
         <div
           id="storm"
@@ -104,7 +104,7 @@ const About = () => {
 
         {/* Left Column: Image + Bio */}
         <div className="flex flex-col items-center text-center max-w-sm">
-          <div className="relative w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] rounded-full overflow-hidden mb-4">
+          <div className="relative w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] rounded-full overflow-hidden mb-4  border border-[#64b0db] shadow-[0_0_30px_#64b0db]">
             <Image
               src="/img/sara-profile-image.jpg"
               alt="Profile picture"
@@ -155,7 +155,7 @@ const About = () => {
               {col.map((tech, index) => (
                 <div
                   key={index}
-                  className="p-[2px] rounded-xl bg-[conic-gradient(at_top_left,_#00f0ff,_#ff007f)]"
+                  className="p-[2px] rounded-xl bg-[conic-gradient(at_top_left,_#00f0ff,_#ff007f)] shadow-[0_0_30px_#64b0db]"
                 >
                   <div
                     className="flex flex-col items-center justify-center w-22 h-16 p-3 rounded-xl"
