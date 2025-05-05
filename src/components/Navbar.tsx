@@ -56,7 +56,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full fixed top-0 left-0 z-50 py-3 px-6 text-white transition-opacity duration-700 backdrop-blur-md shadow-lg ${
+      className={`w-full fixed top-0 left-0 z-50 py-3 px-6 text-white transition-opacity duration-700 backdrop-blur-md shadow-lg border border-[#64b0db] shadow-[0_0_30px_#64b0db]${
         fadeIn && !fadeOut ? "opacity-100" : "opacity-0"
       } bg-gradient-to-r from-[#4B9F8C] to-[#4A3C73]`}
     >

@@ -93,7 +93,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
         {displayedProjects.map((project, index) => (
           <div key={index} className="group [perspective:1000px]">
-            <div className="relative w-full h-60 transition-transform duration-700 [transform-style:preserve-3d] group-hover:rotate-y-180 rounded-xl border border-[#FF6A00] shadow-[0_0_30px_#FF6A00]">
+            <div className="relative w-full h-60 transition-transform duration-700 [transform-style:preserve-3d] group-hover:rotate-y-180 rounded-xl border border-[#64b0db] shadow-[0_0_30px_#64b0db]">
               {/* Front */}
               <div className="absolute inset-0 [backface-visibility:hidden] rounded-xl overflow-hidden cursor-pointer">
                 <Image
@@ -110,7 +110,7 @@ const Projects = () => {
               </div>
 
               {/* Back */}
-              <div className="absolute inset-0 [backface-visibility:hidden] rotate-y-180 bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e] rounded-xl p-4 flex flex-col justify-between cursor-pointer">
+              <div className="absolute inset-0 [backface-visibility:hidden] rotate-y-180 bg-gradient-to-r from-[#4B9F8C] to-[#4A3C73] rounded-xl p-4 flex flex-col justify-between cursor-pointer">
               </div>
             </div>
           </div>
@@ -122,8 +122,8 @@ const Projects = () => {
       <button
         onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
         className={`px-4 py-1 border rounded-md text-white 
-          ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:bg-[#FF6A00]'} 
-          border-[#FF6A00] shadow-[0_0_30px_#FF6A00]`}
+          ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:bg-[#64b0db]'} 
+          border-[#64b0db] shadow-[0_0_30px_#64b0db]`}
       >
         Prev
       </button>
@@ -131,9 +131,9 @@ const Projects = () => {
           <button
             key={i}
             onClick={() => handlePageChange(i + 1)}
-            className={`w-10 h-10 rounded-md border border-[#FF6A00] shadow-[0_0_30px_#FF6A00] ${
-              currentPage === i + 1 ? 'bg-[#FF6A00] font-bold' : 'text-white'
-            } hover:bg-[#FF6A00] transition`}
+            className={`w-10 h-10 cursor-pointer rounded-md border border-[#64b0db] shadow-[0_0_30px_#64b0db] ${
+              currentPage === i + 1 ? 'bg-[#64b0db] font-bold' : 'text-white'
+            } hover:bg-[#64b0db] transition`}
           >
             {i + 1}
           </button>
@@ -141,8 +141,8 @@ const Projects = () => {
         <button
           onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
           className={`px-4 py-1 border rounded-md text-white 
-            ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:bg-[#FF6A00]'}
-            border-[#FF6A00] shadow-[0_0_30px_#FF6A00]`}
+            ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:bg-[#64b0db]'}
+            border-[#64b0db] shadow-[0_0_30px_#64b0db]`}
         >
           Next
         </button>
