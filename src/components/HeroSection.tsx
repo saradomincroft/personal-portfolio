@@ -91,24 +91,52 @@ const HeroSection = () => {
             }`}
           >
             <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110 drop-shadow-[0_0_20px_#64b0db]">
-              <Image
-                src="/img/github-icon.svg"
-                alt="GitHub icon"
-                width={150}
-                height={150}
-                priority
-                className="object-contain drop-shadow-lg"
-              />
+              <a
+                  href="https://github.com/saradomincroft"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <Image
+                  src="/img/icons/github-icon.svg"
+                  alt="GitHub icon"
+                  width={150}
+                  height={150}
+                  priority
+                  className="object-contain drop-shadow-lg"
+                />
+              </a>
             </div>
             <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110 drop-shadow-[0_0_20px_#64b0db]">
-              <Image
-                src="/img/linkedin-icon.png"
-                alt="LinkedIn icon"
-                width={150}
-                height={150}
-                priority
-                className="object-contain drop-shadow-lg"
-              />
+              <a
+                  href="https://www.linkedin.com/in/catalanos/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <Image
+                  src="/img/icons/linkedin-icon.png"
+                  alt="LinkedIn icon"
+                  width={150}
+                  height={150}
+                  priority
+                  className="object-contain drop-shadow-lg"
+                />
+              </a>
+            </div>
+            <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110 drop-shadow-[0_0_20px_#64b0db]">
+              <a
+                href="https://dev.to/saradomincroft"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/img/icons/dev-icon.svg"
+                  alt="Dev.to icon"
+                  width={150}
+                  height={150}
+                  priority
+                  className="object-contain drop-shadow-lg"
+                />
+              </a>
             </div>
           </div>
         )}

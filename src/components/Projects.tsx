@@ -6,66 +6,93 @@ const projects = [
   {
     imgSrc: "/img/sara-profile-image.jpg",
     title: "TBA",
-    description: "Description of project 1",
+    description: "DLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     stack: "React, TypeScript",
-    link: "https://example.com/project1",
+    website: "https://example.com/project2",
+    github: "https://github.com/your-repo",
+    youtube: "",
+    dev: "",
   },
   {
     imgSrc: "/img/sara-profile-image.jpg",
     title: "Professional DJ Website",
-    description: "Description of project 2",
+    description: "I created a dynamic, mobile-first website for my DJ brand Stackpackers using Next.js and Tailwind CSS, with a focus on performance, smooth user experience, and visual identity. The site features custom animations (like particle and lightning overlays), embedded music players, and responsive sections for shows and contact. I experimented with SEO best practices using Open Graph, JSON-LD, and server-side rendering, and overcame technical hurdles like navigation issues caused by next/image. This project sharpened my frontend skills and gave me hands-on experience with metadata, visual polish, and debugging in a real-world context.",
     stack: "Next.js, Tailwind CSS",
-    link: "https://example.com/project2",
+    website: "https://stackpackers.com/",
+    github: "https://github.com/saradomincroft/stackpackers-website",
+    youtube: "",
+    dev: "https://dev.to/saradomincroft/building-stackpackers-website-dnb-dj-and-production-duo-5dfm",  
   },
   {
     imgSrc: "/img/sara-profile-image.jpg",
     title: "Social Media Mobile App",
     description: "Description of project 1",
     stack: "React, TypeScript",
-    link: "https://example.com/project1",
+    website: "https://example.com/project2",
+    github: "https://github.com/your-repo",
+    youtube: "",
+    dev: "",
   },
   {
     imgSrc: "/img/sara-profile-image.jpg",
     title: "Python Image Resizer",
     description: "Description of project 2",
     stack: "Next.js, Tailwind CSS",
-    link: "https://example.com/project2",
+    website: "https://example.com/project2",
+    github: "https://github.com/your-repo",
+    youtube: "",
+    dev: "",  
   },
   {
     imgSrc: "/img/sara-profile-image.jpg",
     title: "DJ DataBass",
     description: "Description of project 1",
     stack: "React, TypeScript",
-    link: "https://example.com/project1",
+    website: "https://example.com/project2",
+    github: "https://github.com/your-repo",
+    youtube: "",
+    dev: "",  
   },
   {
     imgSrc: "/img/sara-profile-image.jpg",
     title: "Pokedex App",
     description: "Description of project 2",
     stack: "Next.js, Tailwind CSS",
-    link: "https://example.com/project2",
-  },
+    website: "https://example.com/project2",
+    github: "https://github.com/your-repo",
+    youtube: "",
+    dev: "",
+    },
   {
     imgSrc: "/img/sara-profile-image.jpg",
     title: "Python Image Resizer",
     description: "Description of project 2",
     stack: "Next.js, Tailwind CSS",
-    link: "https://example.com/project2",
-  },
+    website: "https://example.com/project2",
+    github: "https://github.com/your-repo",
+    youtube: "",
+    dev: "",
+    },
   {
     imgSrc: "/img/sara-profile-image.jpg",
     title: "DJ DataBass",
     description: "Description of project 1",
     stack: "React, TypeScript",
-    link: "https://example.com/project1",
-  },
+    website: "https://example.com/project2",
+    github: "https://github.com/your-repo",
+    youtube: "",
+    dev: "",
+    },
   {
     imgSrc: "/img/sara-profile-image.jpg",
     title: "Pokedex App",
     description: "Description of project 2",
     stack: "Next.js, Tailwind CSS",
-    link: "https://example.com/project2",
-  },
+    website: "https://example.com/project2",
+    github: "https://github.com/your-repo",
+    youtube: "",
+    dev: "",
+    },
 ];
 
 const Projects = () => {
@@ -88,9 +115,9 @@ const Projects = () => {
       ref={sectionRef}
       className="min-h-screen pt-16 px-4 text-[#F1F1F1]"
     >
-      <h2 className="text-4xl font-bold mb-8 border-b-2">Projects</h2>
+      <h2 className="text-4xl font-bold mb-8 border-b-2 drop-shadow-[0_0_20px_#6A1B9A]">Projects</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12 mx-auto">
         {displayedProjects.map((project, index) => (
           <div key={index} className="group [perspective:1000px]">
             <div className="relative w-full h-60 transition-transform duration-700 [transform-style:preserve-3d] group-hover:rotate-y-180 rounded-xl border border-[#64b0db] shadow-[0_0_30px_#64b0db]">
@@ -111,6 +138,34 @@ const Projects = () => {
 
               {/* Back */}
               <div className="absolute inset-0 [backface-visibility:hidden] rotate-y-180 bg-gradient-to-r from-[#4B9F8C] to-[#4A3C73] rounded-xl p-4 flex flex-col justify-between cursor-pointer">
+                <div className="p-4 overflow-y-auto flex-1 scrollbar-thin scrollbar-thumb-[#00FFFF]/60 scrollbar-track-transparent">
+                  <p className="text-sm">{project.description}</p>
+                </div>
+                {(project.website || project.github || project.youtube || project.dev) && (
+                  <div className="flex justify-around items-center gap-3 p-3 border-t border-[#00FFFF]/30 bg-black/20 backdrop-blur-sm">
+                    {project.website && (
+                      <a href={project.website} target="_blank" rel="noopener noreferrer">
+                        <Image src="/img/icons/website-icon.svg" alt="Website" width={24} height={24} />
+                      </a>
+                    )}
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Image src="/img/icons/github-icon.svg" alt="GitHub" width={24} height={24} />
+                      </a>
+                    )}
+                    {project.youtube && (
+                      <a href={project.youtube} target="_blank" rel="noopener noreferrer">
+                        <Image src="/icons/youtube-icon.svg" alt="YouTube" width={24} height={24} />
+                      </a>
+                    )}
+                    {project.dev && (
+                      <a href={project.dev} target="_blank" rel="noopener noreferrer">
+                        <Image src="/img/icons/dev-icon.svg" alt="Dev.to" width={24} height={24} />
+                      </a>
+                    )}
+                  </div>
+                )}
+
               </div>
             </div>
           </div>
