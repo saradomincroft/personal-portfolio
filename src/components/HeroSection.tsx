@@ -56,16 +56,15 @@ const HeroSection = () => {
     <header id="hero-section" className="flex flex-col items-center justify-center" style={{ height: "100vh" }}>
       <div className="relative w-3/4 sm:w-[500px] lg:w-[600px] z-10">
         <Image
-          // src="/personal-portfolio/img/sara-croft-logo.svg"
           src="/img/sara-croft-logo.svg"
           alt="My Portfolio Logo"
           width={1600}
           height={900}
           priority
           onLoadingComplete={handleImageLoad}
-          className={`object-contain drop-shadow-lg transition-opacity duration-400 ${
-            imageLoaded ? "opacity-100" : "opacity-0"
-          }`}
+          className={`object-contain transition-opacity duration-500 
+            ${imageLoaded ? "opacity-100" : "opacity-0"} 
+            drop-shadow-[0_0_20px_#64b0db]`}
           style={{ width: "100%", height: "auto" }}
         />
       </div>
@@ -91,7 +90,7 @@ const HeroSection = () => {
               iconsVisibile ? "opacity-100" : "opacity-0"
             }`}
           >
-            <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110">
+            <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110 drop-shadow-[0_0_20px_#64b0db]">
               <Image
                 src="/img/github-icon.svg"
                 alt="GitHub icon"
@@ -101,7 +100,7 @@ const HeroSection = () => {
                 className="object-contain drop-shadow-lg"
               />
             </div>
-            <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110">
+            <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110 drop-shadow-[0_0_20px_#64b0db]">
               <Image
                 src="/img/linkedin-icon.png"
                 alt="LinkedIn icon"
@@ -127,7 +126,7 @@ const HeroSection = () => {
             alt="Astronaut"
             width={250}
             height={250}
-            className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] object-contain"
+            className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] object-contain drop-shadow-[0_0_20px_#64b0db]"
             priority
           />
         </motion.div>
@@ -150,7 +149,7 @@ const HeroSection = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="white animate-bounce cursor-pointer"
+              className="white animate-bounce cursor-pointer drop-shadow-[0_0_20px_#64b0db]"
             >
               <path d="M12 19V6M12 19l-7-7M12 19l7-7" />
             </svg>

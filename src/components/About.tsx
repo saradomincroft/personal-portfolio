@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type Tech = {
   title: string;
@@ -74,17 +75,24 @@ const About = () => {
         {/* Storm Image */}
         <div
           id="storm"
-          className={`absolute top-[8%] left-[2%] transition-transform duration-1000 ease-in-out will-change-transform ${
+          className={`absolute top-[10%] left-[2%] transition-transform duration-1000 ease-in-out will-change-transform ${
             showStorm ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
           } sm:block hidden`}
-        >
-          <Image
-            src="/img/storm.svg"
-            alt="Storm"
-            width={100}
-            height={100}
-            className="w-[100px] h-[100px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] object-contain animate-float"
-          />
+        >              
+          <motion.h1
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="w-full text-left text-l md:text-2xl lg:text-3xl xl:text-4xl bg-gradient-to-r from-[var(--strong-purple)] to-[var(--dark-steel)] text-transparent bg-clip-text drop-shadow-[0_0_20px_#64b0db]"
+          >
+            <Image
+              src="/img/storm.svg"
+              alt="Storm"
+              width={100}
+              height={100}
+              className="w-[100px] h-[100px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] object-contain animate-float"
+            />
+          </motion.h1>
         </div>
         {/* Moon Image */}
         <div
@@ -92,14 +100,21 @@ const About = () => {
           className={`absolute bottom-4 right-4 transition-transform duration-1000 ease-in-out will-change-transform ${
             showMoon ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
           } sm:block hidden`}
-        >
-          <Image
-            src="/img/moon.svg"
-            alt="Moon"
-            width={100}
-            height={100}
-            className="w-[100px] h-[100px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] object-contain animate-float"
-          />
+        >          
+          <motion.h1
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="w-full text-left text-l md:text-2xl lg:text-3xl xl:text-4xl bg-gradient-to-r from-[var(--strong-purple)] to-[var(--dark-steel)] text-transparent bg-clip-text"
+          >
+            <Image
+              src="/img/moon.svg"
+              alt="Moon"
+              width={100}
+              height={100}
+              className="w-[100px] h-[100px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] object-contain animate-float drop-shadow-[0_0_20px_#64b0db]"
+            />
+          </motion.h1>
         </div>
 
         {/* Left Column: Image + Bio */}
