@@ -6,7 +6,7 @@ const ParticleOverlay = () => {
 
     useEffect(() => {
         const particleContainer = document.querySelector('.particles-overlay');
-        const numParticles = 100;
+        const numParticles = 240;
 
         const handleMouseMove = (event: MouseEvent) => {
             setMousePosition({ x: event.clientX, y: event.clientY });

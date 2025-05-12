@@ -84,7 +84,7 @@ const Navbar = () => {
         fadeIn ? "opacity-100" : "opacity-0"
       } bg-gradient-to-r from-[#4B9F8C] to-[#4A3C73]`}
     >
-      <div className="flex items-center max-w-6xl mx-auto justify-end">
+      <div className="flex items-center mx-auto justify-end">
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-6 text-lg">
           {[

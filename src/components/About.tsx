@@ -65,7 +65,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative items-center pt-24 px-4 min-h-screen"
+      className="relative items-center pt-20 px-4 min-h-screen"
     >
       <h2 className="text-4xl font-bold mb-8 border-b-2 text-[#F1F1F1] drop-shadow-[0_0_20px_#6A1B9A]">About</h2>
 
@@ -129,8 +129,8 @@ const About = () => {
               className="object-contain drop-shadow-lg"
             />
           </div>
-          <p className="text-center text-sm" style={{ color: "#F1F1F1" }}>
-            👋 Hi, I&apos;m Sara Catalano, a creative full-stack problem slayer 
+          <p className="text-center text-base md:text-xl leading-relaxed" style={{ color: "#F1F1F1" }}>
+          👋 Hi, I&apos;m Sara Catalano, a creative full-stack problem slayer 
             with a background that fuses software, mobile, and web development, 
             eCommerce, music, events, and social media.
             <br />

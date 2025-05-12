@@ -34,14 +34,24 @@ const projects = [
     dev: "",
   },
   {
-    imgSrc: "/img/sara-profile-image.jpg",
+    imgSrc: "/img/projects/budget.jpg",
+    title: "React Budget Tracker",
+    description: "Built with React JS and React-Bootstrap, this web app allows users to manage their income and expenses. The home page displays the total balance, income, and expenses. Users can navigate to separate tabs to add or delete incomes and expenses, which are stored in a local JSON file. Incomes are shown as cards with titles, descriptions, and amounts. Expenses include status options (paid or outstanding) and can be filtered accordingly. All calculations are handled in a separate JavaScript utility file.",
+    stack: "React, Boostrap, JSON",
+    website: "",
+    github: "https://github.com/saradomincroft/budget-tracker",
+    youtube: "https://www.youtube.com/watch?v=v4t6hi-CMAQ",
+    dev: "https://dev.to/saradomincroft/simple-budget-tracker-app-using-react-bootstrap-2ce8",  
+  },
+  {
+    imgSrc: "/img/projects/djdatabass.jpg",
     title: "DJ DataBass",
-    description: "Description of project 1",
+    description: "DJ Databass is a full-stack web application built with React, Flask, and SQLAlchemy that allows users to explore and manage a directory of DJs. Users can sign up, log in, and browse DJs with filters by name, genre, subgenre, and venues played at. The app includes functionality to favorite DJs for quick access, and authenticated users can add new DJs to the database. Admin users have the additional ability to delete entries. The frontend is styled with React-Bootstrap and communicates with a Flask API backed by a relational database using SQLAlchemy.",
     stack: "React, Python, Flask, SQLAlchemy",
     website: "",
     github: "https://github.com/saradomincroft/dj-databass",
     youtube: "",
-    dev: "https://dev.to/saradomincroft/dj-databass-51d0",  
+    dev: "",  
   },
   {
     imgSrc: "/img/projects/pokedex.jpg",
@@ -52,7 +62,7 @@ const projects = [
     github: "https://github.com/saradomincroft/pokedex",
     youtube: "",
     dev: "https://dev.to/saradomincroft/pokedex-project-using-pokeapi-29ab",
-    },
+  },
 ];
 
 const Projects = () => {
@@ -73,7 +83,7 @@ const Projects = () => {
     <div
       id="projects"
       ref={sectionRef}
-      className="min-h-screen pt-24 px-8 text-[#F1F1F1]"
+      className="min-h-screen pt-20 px-8 text-[#F1F1F1]"
     >
       <h2 className="text-4xl font-bold mb-8 border-b-2 drop-shadow-[0_0_20px_#6A1B9A]">Projects</h2>
 
@@ -115,7 +125,7 @@ const Projects = () => {
                     )}
                     {project.youtube && (
                       <a href={project.youtube} target="_blank" rel="noopener noreferrer" className="transition hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]">
-                        <Image src="/icons/youtube-icon.svg" alt="YouTube" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
+                        <Image src="/img/icons/youtube-icon.png" alt="YouTube" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
                       </a>
                     )}
                     {project.dev && (
