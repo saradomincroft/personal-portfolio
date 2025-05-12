@@ -130,17 +130,17 @@ const About = () => {
             />
           </div>
           <p className="text-center text-sm" style={{ color: "#F1F1F1" }}>
-            👋 Hi, I’m Sara Catalano—but when I’m diving into code and
+            👋 Hi, I&apos;m Sara Catalano—but when I&apos;m diving into code and
             navigating design challenges, you can call me Sara Croft.
             (Adventurer of bugs, builder of bold ideas).
             <br />
             <br />
-            I’m a creative full-stack problem slayer with a background that
+            I&apos;m a creative full-stack problem slayer with a background that
             fuses software, mobile, and web development, eCommerce, music,
             events, and social media.
             <br />
             <br />
-            Whether I’m building responsive, high-performance websites or
+            Whether I&apos;m building responsive, high-performance websites or
             crafting immersive digital experiences for live events, I bring both
             precision and energy to every project.
             <br />
@@ -152,9 +152,17 @@ const About = () => {
             inspired, and always experimenting.
             <br />
             <br />
+            Lately, I&apos;ve been exploring machine learning, bringing data-driven 
+            insights into the creative process and expanding the possibilities 
+            of how technology can be used to solve real-world problems.
+            <br />
+            <br />
             If it involves electrifying a digital space, syncing tech with
-            creativity, or turning big ideas into bold experiences—you’ll find me
+            creativity, or turning big ideas into bold experiences—you&apos;ll find me
             in my element.
+            <br />
+            <br />
+            Check out my tech stack and projects below!
           </p>
         </div>
 
