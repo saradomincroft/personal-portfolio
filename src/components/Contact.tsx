@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const Contact = () => {
-  const currentYear = new Date().getFullYear(); // Get current year
+  const currentYear = new Date().getFullYear();
 
   return (
     <div
       id="contact"
-      className="min-h-screen pt-20 px-4 text-[#F1F1F1] relative" // Ensure the container is relative for positioning
+      className="min-h-screen pt-20 px-4 text-[#F1F1F1] relative" 
     >
       <h2 className="text-4xl font-bold mb-8 border-b-2 drop-shadow-[0_0_20px_#6A1B9A]">
         Contact
