@@ -113,7 +113,7 @@ const Projects = () => {
     <div
       id="projects-section"
       ref={sectionRef}
-      className="min-h-screen pt-16 px-4 text-[#F1F1F1]"
+      className="min-h-screen pt-24 px-8 text-[#F1F1F1]"
     >
       <h2 className="text-4xl font-bold mb-8 border-b-2 drop-shadow-[0_0_20px_#6A1B9A]">Projects</h2>
 
@@ -130,7 +130,7 @@ const Projects = () => {
                   objectFit="cover"
                   className="rounded-xl"
                 />
-                <div className="absolute bottom-0 w-full bg-black bg-opacity-60 text-center py-3">
+                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#4B9F8C] to-[#4A3C73] bg-opacity-60 text-center py-3">
                   <h3 className="text-lg font-semibold">{project.title}</h3>
                   <h4 className="text-sm">{project.stack}</h4>
                 </div>
