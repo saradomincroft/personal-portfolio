@@ -24,9 +24,9 @@ const projects = [
     dev: "https://dev.to/saradomincroft/building-stackpackers-website-dnb-dj-and-production-duo-5dfm",  
   },
   {
-    imgSrc: "/img/sara-profile-image.jpg",
+    imgSrc: "/img/projects/ravesync.jpg",
     title: "RaveSync Mobile App",
-    description: "Description of project 1",
+    description: "I developed a modern, dynamic app using React Native, TypeScript, Expo, Convex, and Clerk. The app provides a seamless and interactive experience where users can filter and explore event posts based on genres and cities. The frontend is built with React Native and TypeScript, offering a smooth user interface with real-time interactions. I integrated Convex for the backend to efficiently handle and retrieve user data and posts, while Clerk manages user authentication securely. The app also includes dropdown filters for genres and cities, allowing users to customize their feed and view posts that match their preferences. This project enhanced my skills in full-stack development, including frontend mobile app design, backend API integration, and secure user management.",
     stack: "React Native, TypeScript, Clerk, Convex",
     website: "",
     github: "https://github.com/your-repo",

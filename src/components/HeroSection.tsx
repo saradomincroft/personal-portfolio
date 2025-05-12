@@ -56,7 +56,7 @@ const HeroSection = () => {
     <header id="home" className="flex flex-col items-center justify-center" style={{ height: "100vh" }}>
       <div className="relative w-3/4 sm:w-[500px] lg:w-[600px] z-10">
         <Image
-          src="/img/sara-croft-logo.svg"
+          src="/img/sara-catalano-logo.png"
           // src="/personal-portfolio/img/sara-croft-logo.svg"
           alt="My Portfolio Logo"
           width={1600}

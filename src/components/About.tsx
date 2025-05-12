@@ -118,7 +118,7 @@ const About = () => {
         </div>
 
         {/* Left Column: Image + Bio */}
-        <div className="flex flex-col items-center text-center max-w-sm">
+        <div className="flex flex-col items-center text-center max-w-lg">
           <div className="relative w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] rounded-full overflow-hidden mb-4  border border-[#64b0db] shadow-[0_0_30px_#64b0db]">
             <Image
               src="/img/sara-profile-image.jpg"

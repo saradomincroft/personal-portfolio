@@ -11,7 +11,7 @@ const Contact = () => {
       <h2 className="text-4xl font-bold mb-8 border-b-2 drop-shadow-[0_0_20px_#6A1B9A]">
         Contact
       </h2>
-      <div className="text-2xl md:text-3xl leading-relaxed text-left max-w-3xl mx-0 drop-shadow-[0_0_10px_#6A1B9A]">
+      <div className="text-1xl sm:text-2xl md:text-3xl leading-relaxed text-left max-w-3xl mx-0 drop-shadow-[0_0_10px_#6A1B9A]">
         You can contact me at{" "}
         <span className="underline">
           saracatalanodev@gmail.com
