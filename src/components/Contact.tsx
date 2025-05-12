@@ -22,7 +22,7 @@ const Contact = () => {
           href="https://www.linkedin.com/in/catalanos"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline text-[var(--strong-purple)] hover:text-[var(--light-steel)] transition-colors"
+          className="underline text-[var(--muted-green)] hover:text-[var(--light-steel)] transition-colors"
         >
           LinkedIn
         </a>
