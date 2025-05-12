@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sara Catalano - Software Engineer and Developer Portfolio",
+  title: "Sara Catalano - Software Engineer and Developer Portfolio | Melbourne, Australia",
   description:
     "Sara Catalano's software engineering portfolio showcasing skills in full-stack development, mobile and web applications, and software solutions. React, Python, C#, .NET, and more.",
   keywords:
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Sara Catalano",
-      // url: "https://www.saracatalano.com",
+      url: "https://saradomincroft.github.io/personal-portfolio/",
     },
   ],
   openGraph: {
-    title: "Sara Catalano - Software Engineer & Developer Portfolio",
+    title: "Sara Catalano - Software Engineer & Developer Portfolio | Melbourne, Australia",
     description:
       "Explore the software engineering portfolio of Sara Catalano. Specializing in full-stack development, web apps, and innovative software solutions.",
-    // url: "https://www.saracatalano.com",
+    url: "https://saradomincroft.github.io/personal-portfolio/",
     siteName: "Sara Catalano",
     // images: [
     //   {

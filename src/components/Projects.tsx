@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const projects = [
   {
-    imgSrc: "/img/sara-profile-image.jpg",
+    imgSrc: "/img/projects/muffin.jpg",
     title: "Muffin VS Chihuaha Game",
-    description: "DLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description: "I developed an interactive and engaging web game, 'Muffin vs Chihuahua,' where players compete against an AI to guess whether an image is a muffin or a chihuahua. The game uses Flask for the backend, featuring dynamic game mechanics like real-time score tracking, a countdown timer, and an intuitive user interface. Players can select difficulty levels, and the AI employs a deep learning model using TensorFlow for predictions. To make the game more accessible, I intentionally make the AI incorrect at times to give the player a better chance. I implemented session storage for progress and scoring, along with smooth transitions between rounds. This project significantly enhanced my full-stack development skills, including Flask routing, session management, and machine learning integration, while providing a fun and responsive user experience.",
     stack: "Python, Flask, TensorFlow",
     website: "",
     github: "https://github.com/saradomincroft/muffin-vs-chihuahua-game",
@@ -14,7 +14,7 @@ const projects = [
     dev: "",
   },
   {
-    imgSrc: "/img/sara-profile-image.jpg",
+    imgSrc: "/img/projects/stackpackers.jpg",
     title: "Professional DJ Website",
     description: "I created a dynamic, mobile-first website for my DJ brand Stackpackers using Next.js and Tailwind CSS, with a focus on performance, smooth user experience, and visual identity. The site features custom animations (like particle and lightning overlays), embedded music players, and responsive sections for shows and contact. I experimented with SEO best practices using Open Graph, JSON-LD, and server-side rendering, and overcame technical hurdles like navigation issues caused by next/image. This project sharpened my frontend skills and gave me hands-on experience with metadata, visual polish, and debugging in a real-world context.",
     stack: "Next.js, Tailwind CSS",
@@ -44,9 +44,9 @@ const projects = [
     dev: "https://dev.to/saradomincroft/dj-databass-51d0",  
   },
   {
-    imgSrc: "/img/sara-profile-image.jpg",
+    imgSrc: "/img/projects/pokedex.jpg",
     title: "Pokedex App",
-    description: "Description of project 2",
+    description: "I built a responsive Pokédex web app using vanilla JavaScript that displays the original 151 Pokémon with images, types, and descriptions from the PokéAPI. Users can search by name or number, filter by type, and manage a list of favourites stored in localStorage. The UI includes hover effects, type-based color coding, and persistent state for a smooth user experience.",
     stack: "HTML, CSS, JavaScript",
     website: "https://pokedex-mu-bay.vercel.app/",
     github: "https://github.com/saradomincroft/pokedex",
@@ -104,28 +104,27 @@ const Projects = () => {
                 {(project.website || project.github || project.youtube || project.dev) && (
                   <div className="flex justify-around items-center gap-3 p-3 border-t border-[#00FFFF]/30 bg-black/20 backdrop-blur-sm">
                     {project.website && (
-                      <a href={project.website} target="_blank" rel="noopener noreferrer">
-                        <Image src="/img/icons/website-icon.svg" alt="Website" width={24} height={24} />
+                      <a href={project.website} target="_blank" rel="noopener noreferrer" className="transition hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]">
+                        <Image src="/img/icons/website-icon.svg" alt="Website" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
                       </a>
                     )}
                     {project.github && (
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Image src="/img/icons/github-icon.svg" alt="GitHub" width={24} height={24} />
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="transition hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]">
+                        <Image src="/img/icons/github-icon.svg" alt="GitHub" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
                       </a>
                     )}
                     {project.youtube && (
-                      <a href={project.youtube} target="_blank" rel="noopener noreferrer">
-                        <Image src="/icons/youtube-icon.svg" alt="YouTube" width={24} height={24} />
+                      <a href={project.youtube} target="_blank" rel="noopener noreferrer" className="transition hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]">
+                        <Image src="/icons/youtube-icon.svg" alt="YouTube" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
                       </a>
                     )}
                     {project.dev && (
-                      <a href={project.dev} target="_blank" rel="noopener noreferrer">
-                        <Image src="/img/icons/dev-icon.svg" alt="Dev.to" width={24} height={24} />
+                      <a href={project.dev} target="_blank" rel="noopener noreferrer" className="transition hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]">
+                        <Image src="/img/icons/dev-icon.svg" alt="Dev.to" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
                       </a>
                     )}
                   </div>
                 )}
-
               </div>
             </div>
           </div>
