@@ -5,11 +5,11 @@ import Image from "next/image";
 const projects = [
   {
     imgSrc: "/img/sara-profile-image.jpg",
-    title: "TBA",
+    title: "Muffin VS Chihuaha Game",
     description: "DLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    stack: "React, TypeScript",
-    website: "https://example.com/project2",
-    github: "https://github.com/your-repo",
+    stack: "Python, Flask, TensorFlow",
+    website: "",
+    github: "https://github.com/saradomincroft/muffin-vs-chihuahua-game",
     youtube: "",
     dev: "",
   },
@@ -28,30 +28,20 @@ const projects = [
     title: "RaveSync Mobile App",
     description: "Description of project 1",
     stack: "React Native, TypeScript, Clerk, Convex",
-    website: "https://example.com/project2",
+    website: "",
     github: "https://github.com/your-repo",
     youtube: "",
     dev: "",
   },
   {
     imgSrc: "/img/sara-profile-image.jpg",
-    title: "Python Image Resizer",
-    description: "Description of project 2",
-    stack: "Python",
-    website: "https://example.com/project2",
-    github: "https://github.com/your-repo",
-    youtube: "",
-    dev: "",  
-  },
-  {
-    imgSrc: "/img/sara-profile-image.jpg",
     title: "DJ DataBass",
     description: "Description of project 1",
     stack: "React, Python, Flask, SQLAlchemy",
-    website: "https://example.com/project2",
-    github: "https://github.com/your-repo",
+    website: "",
+    github: "https://github.com/saradomincroft/dj-databass",
     youtube: "",
-    dev: "",  
+    dev: "https://dev.to/saradomincroft/dj-databass-51d0",  
   },
   {
     imgSrc: "/img/sara-profile-image.jpg",
@@ -62,36 +52,6 @@ const projects = [
     github: "https://github.com/saradomincroft/pokedex",
     youtube: "",
     dev: "https://dev.to/saradomincroft/pokedex-project-using-pokeapi-29ab",
-    },
-  {
-    imgSrc: "/img/sara-profile-image.jpg",
-    title: "Python Image Resizer",
-    description: "Description of project 2",
-    stack: "Next.js, Tailwind CSS",
-    website: "https://example.com/project2",
-    github: "https://github.com/your-repo",
-    youtube: "",
-    dev: "",
-    },
-  {
-    imgSrc: "/img/sara-profile-image.jpg",
-    title: "DJ DataBass",
-    description: "Description of project 1",
-    stack: "React, TypeScript",
-    website: "https://example.com/project2",
-    github: "https://github.com/your-repo",
-    youtube: "",
-    dev: "",
-    },
-  {
-    imgSrc: "/img/sara-profile-image.jpg",
-    title: "Pokedex App",
-    description: "Description of project 2",
-    stack: "Next.js, Tailwind CSS",
-    website: "https://example.com/project2",
-    github: "https://github.com/your-repo",
-    youtube: "",
-    dev: "",
     },
 ];
 
@@ -138,7 +98,7 @@ const Projects = () => {
 
               {/* Back */}
               <div className="absolute inset-0 [backface-visibility:hidden] rotate-y-180 bg-gradient-to-r from-[#4B9F8C] to-[#4A3C73] rounded-xl p-4 flex flex-col justify-between cursor-pointer">
-                <div className="p-4 overflow-y-auto flex-1 scrollbar-thin scrollbar-thumb-[#00FFFF]/60 scrollbar-track-transparent">
+                <div className="p-4 overflow-y-auto flex-1 custom-scrollbar">
                   <p className="text-sm">{project.description}</p>
                 </div>
                 {(project.website || project.github || project.youtube || project.dev) && (
