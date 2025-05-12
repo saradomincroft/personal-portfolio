@@ -71,7 +71,7 @@ const Projects = () => {
 
   return (
     <div
-      id="projects-section"
+      id="projects"
       ref={sectionRef}
       className="min-h-screen pt-24 px-8 text-[#F1F1F1]"
     >

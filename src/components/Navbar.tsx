@@ -1,38 +1,32 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
-  const [activeLink, setActiveLink] = useState("#hero-section");
-
+  const [activeLink, setActiveLink] = useState("hero");
+  
+  const mobileMenuRef = useRef<HTMLUListElement | null>(null);
   useEffect(() => {
     const timer = setTimeout(() => setFadeIn(true), 100);
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
-    const sectionIds = [
-      "hero-section",
-      "about-section",
-      "projects-section",
-      "certificates-section",
-      "contact-section",
-    ];
+    const sectionIds = ["hero", "about", "projects", "certificates", "contact"];
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveLink(`#${entry.target.id}`);
+            setActiveLink(entry.target.id);
           }
         });
       },
       {
         threshold: 0.4,
-        rootMargin: "-80px 0px 0px 0px",
+        rootMargin: "0px 0px 0px 0px",
       }
     );
-    
 
     sectionIds.forEach((id) => {
       const element = document.getElementById(id);
@@ -47,14 +41,41 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleLinkClick = (link: string) => {
-    setActiveLink(link);
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  const handleLinkClick = (linkId: string) => {
+    setActiveLink(linkId);
     setIsOpen(false);
+
+    if (linkId === "hero") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const section = document.getElementById(linkId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
 
-  const linkClass = (href: string) =>
-    `relative inline-block pb-2 after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 ${
-      activeLink === href ? "after:w-full" : "hover:after:w-full"
+  const linkClass = (linkId: string) =>
+    `relative inline-block pb-2 after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 cursor-pointer ${
+      activeLink === linkId ? "after:w-full" : "hover:after:w-full"
     }`;
 
   return (
@@ -67,20 +88,19 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-6 text-lg">
           {[
-            { href: "#hero-section", label: "Home" },
-            { href: "#about-section", label: "About" },
-            { href: "#projects-section", label: "Projects" },
-            { href: "#certificates-section", label: "Certificates" },
-            { href: "#contact-section", label: "Contact" },
-          ].map(({ href, label }) => (
-            <li key={href}>
-              <a
-                href={href}
-                onClick={() => handleLinkClick(href)}
-                className={linkClass(href)}
+            { id: "hero", label: "Home" },
+            { id: "about", label: "About" },
+            { id: "projects", label: "Projects" },
+            { id: "certificates", label: "Certificates" },
+            { id: "contact", label: "Contact" },
+          ].map(({ id, label }) => (
+            <li key={id}>
+              <button
+                onClick={() => handleLinkClick(id)}
+                className={linkClass(id)}
               >
                 {label}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
@@ -97,22 +117,24 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col px-2 pb-4 gap-4 text-lg">
+        <ul
+          ref={mobileMenuRef}
+          className="md:hidden flex flex-col px-2 pb-4 gap-4 text-lg"
+        >
           {[
-            { href: "#hero-section", label: "Home" },
-            { href: "#about-section", label: "About" },
-            { href: "#projects-section", label: "Projects" },
-            { href: "#certificates-section", label: "Certificates" },
-            { href: "#contact-section", label: "Contact" },
-          ].map(({ href, label }) => (
-            <li key={href}>
-              <a
-                href={href}
-                onClick={() => handleLinkClick(href)}
-                className={linkClass(href)}
+            { id: "hero", label: "Home" },
+            { id: "about", label: "About" },
+            { id: "projects", label: "Projects" },
+            { id: "certificates", label: "Certificates" },
+            { id: "contact", label: "Contact" },
+          ].map(({ id, label }) => (
+            <li key={id}>
+              <button
+                onClick={() => handleLinkClick(id)}
+                className={linkClass(id)}
               >
                 {label}
-              </a>
+              </button>
             </li>
           ))}
         </ul>

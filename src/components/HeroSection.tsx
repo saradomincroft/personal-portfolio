@@ -42,7 +42,7 @@ const HeroSection = () => {
   }, [typingCompleted]);
   
   const scrollToAboutSection = () => {
-    const aboutSection = document.getElementById("about-section");
+    const aboutSection = document.getElementById("about");
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -53,7 +53,7 @@ const HeroSection = () => {
   };
 
   return (
-    <header id="hero-section" className="flex flex-col items-center justify-center" style={{ height: "100vh" }}>
+    <header id="home" className="flex flex-col items-center justify-center" style={{ height: "100vh" }}>
       <div className="relative w-3/4 sm:w-[500px] lg:w-[600px] z-10">
         <Image
           src="/img/sara-croft-logo.svg"
