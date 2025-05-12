@@ -22,18 +22,29 @@ const Contact = () => {
           href="https://www.linkedin.com/in/catalanos"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline text-[var(--muted-green)] hover:text-[var(--light-steel)] transition-colors"
+          className="underline text-[#00ffff] hover:text-[var(--light-steel)] transition-colors"
         >
           LinkedIn
         </a>
         .
       </div>
+      <div
+          id="astronaut"
+          className="absolute top-80 right-4"
+        >          
+          <Image
+            src="/img/astronaut-contact.png"
+            alt="Astroanut"
+            width={240}
+            height={240}
+            className="w-[240px] h-[240px] sm:w-[320px] sm:h-[320px] object-contain drop-shadow-[0_0_20px_#64b0db]"
+          />
+
+        </div>
 
       <footer className="absolute bottom-0 left-0 w-full py-4 border-t-2 border-[#F1F1F1]">
-        <div className="text-center text-[#F1F1F1]">
-          <p className="text-xl">© {currentYear} Sara Catalano</p>
-          <div className="flex justify-center gap-6 mt-4">
-            {/* LinkedIn */}
+      <div className="flex justify-end items-center gap-4 mt-2 text-[#F1F1F1] mr-4">
+      {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/catalanos"
               target="_blank"
@@ -80,7 +91,7 @@ const Contact = () => {
                 className="transition-all group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_#0d6efd]"
               />
             </a>
-          </div>
+            <p className="text-l md:text-xl">© {currentYear} Sara Catalano</p>
         </div>
       </footer>
     </div>

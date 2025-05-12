@@ -132,7 +132,7 @@ const About = () => {
           <p className="text-center text-base md:text-xl leading-relaxed" style={{ color: "#F1F1F1" }}>
           👋 Hi, I&apos;m Sara Catalano, a creative full-stack problem slayer 
             with a background that fuses software, mobile, and web development, 
-            eCommerce, music, events, and social media.
+            eCommerce, music, events, and social media marketing.
             <br />
             <br />
             Whether I&apos;m building responsive, high-performance websites or
