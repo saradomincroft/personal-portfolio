@@ -139,6 +139,22 @@ const HeroSection = () => {
                 />
               </a>
             </div>
+            <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110 drop-shadow-[0_0_20px_#64b0db]">
+              <a
+                href="/resume/sara-catalano-resume.pdf"
+                download
+                title="Download CV"
+              >
+                <Image
+                  src="/img/icons/resume-icon.svg"
+                  alt="Download Resume"
+                  width={150}
+                  height={150}
+                  priority
+                  className="object-contain drop-shadow-lg"
+                />
+              </a>
+            </div>
           </div>
         )}
       </div>
