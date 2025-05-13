@@ -130,22 +130,22 @@ const Projects = () => {
                   <div className="flex justify-around items-center gap-3 p-3 border-t border-[#00FFFF]/30 bg-black/20 backdrop-blur-sm">
                     {project.website && (
                       <a href={project.website} target="_blank" rel="noopener noreferrer" className="transition hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]">
-                        <Image src="/img/icons/website-icon.svg" alt="Website" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
+                        <Image src="/personal-portfolio/img/icons/website-icon.svg" alt="Website" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
                       </a>
                     )}
                     {project.github && (
                       <a href={project.github} target="_blank" rel="noopener noreferrer" className="transition hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]">
-                        <Image src="/img/icons/github-icon.svg" alt="GitHub" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
+                        <Image src="/personal-portfolio/img/icons/github-icon.svg" alt="GitHub" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
                       </a>
                     )}
                     {project.youtube && (
                       <a href={project.youtube} target="_blank" rel="noopener noreferrer" className="transition hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]">
-                        <Image src="/img/icons/youtube-icon.png" alt="YouTube" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
+                        <Image src="/personal-portfolio/img/icons/youtube-icon.png" alt="YouTube" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
                       </a>
                     )}
                     {project.dev && (
                       <a href={project.dev} target="_blank" rel="noopener noreferrer" className="transition hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]">
-                        <Image src="/img/icons/dev-icon.svg" alt="Dev.to" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
+                        <Image src="/personal-portfolio/img/icons/dev-icon.svg" alt="Dev.to" width={24} height={24} className="transition filter hover:drop-shadow-[0_0_8px_#00ffff] hover:text-[#00ffff]" />
                       </a>
                     )}
                   </div>
