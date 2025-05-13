@@ -57,7 +57,7 @@ const HeroSection = () => {
       <div className="relative w-3/4 sm:w-[500px] lg:w-[600px] z-10">
         <Image
           // src="/img/sara-catalano-logo.png"
-          src="/personal-portfolio/img/sara-catalano-logo.svg"
+          src="/personal-portfolio/img/sara-catalano-logo.png"
           alt="My Portfolio Logo"
           width={1600}
           height={900}
