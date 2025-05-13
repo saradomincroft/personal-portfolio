@@ -30,7 +30,7 @@ const Contact = () => {
       </div>
       <div
           id="astronaut"
-          className="absolute top-80 right-4"
+          className="absolute top-60 right-4"
         >          
           <Image
             src="/personal-portfolio/img/astronaut-contact.png"
