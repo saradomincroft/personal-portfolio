@@ -71,6 +71,8 @@ const Projects = () => {
   const totalPages = Math.ceil(projects.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const displayedProjects = projects.slice(startIndex, startIndex + itemsPerPage);
+  const [flippedCards, setFlippedCards] = useState<{ [key: number]: boolean }>({});
+
 
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -78,6 +80,14 @@ const Projects = () => {
     setCurrentPage(newPage);
     sectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const toggleFlip = (index: number) => {
+    setFlippedCards((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+  
 
   return (
     <div
@@ -89,9 +99,14 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12 mx-auto">
         {displayedProjects.map((project, index) => (
-          <div key={index} className="group [perspective:1000px]">
-            <div className="relative w-full h-60 transition-transform duration-700 [transform-style:preserve-3d] group-hover:rotate-y-180 rounded-xl border border-[#64b0db] shadow-[0_0_30px_#64b0db]">
-              {/* Front */}
+          <div key={index} className="group [perspective:1000px] cursor-pointer"
+          onClick={() => toggleFlip(index)}>
+          <div
+            className={`relative w-full h-60 transition-transform duration-700 [transform-style:preserve-3d] rounded-xl border border-[#64b0db] shadow-[0_0_30px_#64b0db] 
+              ${flippedCards[index] ? 'rotate-y-180' : ''} 
+              group-hover:rotate-y-180`}
+          >              
+          {/* Front */}
               <div className="absolute inset-0 [backface-visibility:hidden] rounded-xl overflow-hidden cursor-pointer">
                 <Image
                   src={project.imgSrc}
