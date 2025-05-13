@@ -126,7 +126,7 @@ const About = () => {
               width={300}
               height={300}
               priority
-              className="object-contain drop-shadow-lg"
+              className="object-contain drop-shadow-lg rounded-full"
             />
           </div>
           <p className="text-center text-base md:text-xl leading-relaxed" style={{ color: "#F1F1F1" }}>

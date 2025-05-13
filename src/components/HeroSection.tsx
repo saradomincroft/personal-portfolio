@@ -161,22 +161,26 @@ const HeroSection = () => {
 
       {typingCompleted && (
         <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 50, damping: 15 }}
-            className="absolute top-[8%] left-[2%] will-change-transform"
-          >
-            <div className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] drop-shadow-[0_0_20px_#64b0db]">
-              <Image
-                src="/personal-portfolio/img/astronaut.svg"
-                alt="Astronaut"
-                width={250}
-                height={250}
-                className="w-full h-full object-contain"
-                priority
-              />
-            </div>
-          </motion.div>
+  initial={{ x: -100, opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{ type: "spring", stiffness: 50, damping: 15 }}
+  className="absolute top-[8%] left-[2%] will-change-transform"
+>
+  <div className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px]">
+    <Image
+      src="/personal-portfolio/img/astronaut.svg"
+      alt="Astronaut"
+      width={250}
+      height={250}
+      className="w-full h-full object-contain"
+      style={{
+        filter: "drop-shadow(0 0 20px #64b0db)",
+      }}
+      priority
+    />
+  </div>
+</motion.div>
+
       )}
       <div className="absolute bottom-8 left-0 right-0 flex justify-center">
         {typingCompleted && (
