@@ -9,19 +9,19 @@ type Tech = {
 };
 
 const techStack: Tech[] = [
-  { title: "Python", imgSrc: "/img/icons/python.svg" },
-  { title: "React", imgSrc: "/img/icons/react.svg" },
-  { title: "TypeScript", imgSrc: "/img/icons/typescript.svg" },
-  { title: "C#", imgSrc: "/img/icons/csharp.svg" },
-  { title: "Next.js", imgSrc: "/img/icons/nextjs.svg" },
-  { title: "Node.js", imgSrc: "/img/icons/nodejs.svg" },
-  { title: ".NET", imgSrc: "/img/icons/net.svg" },
-  { title: "Tailwind", imgSrc: "/img/icons/tailwind.svg" },
-  { title: "PHP", imgSrc: "/img/icons/php.svg" },
-  { title: "Java", imgSrc: "/img/icons/java.svg" },
-  { title: "SQL", imgSrc: "/img/icons/sql.svg" },
-  { title: "WordPress", imgSrc: "/img/icons/wordpress.svg" },
-  { title: "Git", imgSrc: "/img/icons/git.svg" },
+  { title: "Python", imgSrc: "/personal-portfolio/img/icons/python.svg" },
+  { title: "React", imgSrc: "/personal-portfolio/img/icons/react.svg" },
+  { title: "TypeScript", imgSrc: "/personal-portfolio/img/icons/typescript.svg" },
+  { title: "C#", imgSrc: "/personal-portfolio/img/icons/csharp.svg" },
+  { title: "Next.js", imgSrc: "/personal-portfolio/img/icons/nextjs.svg" },
+  { title: "Node.js", imgSrc: "/personal-portfolio/img/icons/nodejs.svg" },
+  { title: ".NET", imgSrc: "/personal-portfolio/img/icons/net.svg" },
+  { title: "Tailwind", imgSrc: "/personal-portfolio/img/icons/tailwind.svg" },
+  { title: "PHP", imgSrc: "/personal-portfolio/img/icons/php.svg" },
+  { title: "Java", imgSrc: "/personal-portfolio/img/icons/java.svg" },
+  { title: "SQL", imgSrc: "/personal-portfolio/img/icons/sql.svg" },
+  { title: "WordPress", imgSrc: "/personal-portfolio/img/icons/wordpress.svg" },
+  { title: "Git", imgSrc: "/personal-portfolio/img/icons/git.svg" },
 ];
 
 const columns: Tech[][] = [[], [], []];
@@ -86,7 +86,7 @@ const About = () => {
             className="w-full text-left text-l md:text-2xl lg:text-3xl xl:text-4xl bg-gradient-to-r from-[var(--strong-purple)] to-[var(--dark-steel)] text-transparent bg-clip-text drop-shadow-[0_0_20px_#64b0db]"
           >
             <Image
-              src="/img/storm.svg"
+              src="/personal-portfolio/img/storm.svg"
               alt="Storm"
               width={100}
               height={100}
@@ -108,7 +108,7 @@ const About = () => {
             className="w-full text-left text-l md:text-2xl lg:text-3xl xl:text-4xl bg-gradient-to-r from-[var(--strong-purple)] to-[var(--dark-steel)] text-transparent bg-clip-text"
           >
             <Image
-              src="/img/moon.svg"
+              src="/personal-portfolio/img/moon.svg"
               alt="Moon"
               width={100}
               height={100}
@@ -121,7 +121,7 @@ const About = () => {
         <div className="flex flex-col items-center text-center max-w-lg">
           <div className="relative w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] rounded-full overflow-hidden mb-4  border border-[#64b0db] shadow-[0_0_30px_#64b0db]">
             <Image
-              src="/img/sara-profile-image.jpg"
+              src="/personal-portfolio/img/sara-profile-image.jpg"
               alt="Profile picture"
               width={300}
               height={300}

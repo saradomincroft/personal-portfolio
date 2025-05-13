@@ -33,7 +33,7 @@ const Contact = () => {
           className="absolute top-80 right-4"
         >          
           <Image
-            src="/img/astronaut-contact.png"
+            src="/personal-portfolio/img/astronaut-contact.png"
             alt="Astroanut"
             width={240}
             height={240}
@@ -52,7 +52,7 @@ const Contact = () => {
               className="group"
             >
               <Image
-                src="/img/icons/linkedin-icon.png"
+                src="/personal-portfolio/img/icons/linkedin-icon.png"
                 alt="LinkedIn"
                 width={24}
                 height={24}
@@ -68,7 +68,7 @@ const Contact = () => {
               className="group"
             >
               <Image
-                src="/img/icons/github-icon.svg"
+                src="/personal-portfolio/img/icons/github-icon.svg"
                 alt="GitHub"
                 width={24}
                 height={24}
@@ -84,7 +84,7 @@ const Contact = () => {
               className="group"
             >
               <Image
-                src="/img/icons/dev-icon.svg"
+                src="/personal-portfolio/img/icons/dev-icon.svg"
                 alt="Dev.to"
                 width={24}
                 height={24}

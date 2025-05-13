@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const projects = [
   {
-    imgSrc: "/img/projects/muffin.jpg",
+    imgSrc: "/personal-portfolio/img/projects/muffin.jpg",
     title: "Muffin VS Chihuaha Game",
     description: "I developed an interactive and engaging web game, 'Muffin vs Chihuahua,' where players compete against an AI to guess whether an image is a muffin or a chihuahua. The game uses Flask for the backend, featuring dynamic game mechanics like real-time score tracking, a countdown timer, and an intuitive user interface. Players can select difficulty levels, and the AI employs a deep learning model using TensorFlow for predictions. To make the game more accessible, I intentionally make the AI incorrect at times to give the player a better chance. I implemented session storage for progress and scoring, along with smooth transitions between rounds. This project significantly enhanced my full-stack development skills, including Flask routing, session management, and machine learning integration, while providing a fun and responsive user experience.",
     stack: "Python, Flask, TensorFlow",
@@ -14,7 +14,7 @@ const projects = [
     dev: "",
   },
   {
-    imgSrc: "/img/projects/stackpackers.jpg",
+    imgSrc: "/personal-portfolio/img/projects/stackpackers.jpg",
     title: "Professional DJ Website",
     description: "I created a dynamic, mobile-first website for my DJ brand Stackpackers using Next.js and Tailwind CSS, with a focus on performance, smooth user experience, and visual identity. The site features custom animations (like particle and lightning overlays), embedded music players, and responsive sections for shows and contact. I experimented with SEO best practices using Open Graph, JSON-LD, and server-side rendering, and overcame technical hurdles like navigation issues caused by next/image. This project sharpened my frontend skills and gave me hands-on experience with metadata, visual polish, and debugging in a real-world context.",
     stack: "Next.js, Tailwind CSS",
@@ -24,7 +24,7 @@ const projects = [
     dev: "https://dev.to/saradomincroft/building-stackpackers-website-dnb-dj-and-production-duo-5dfm",  
   },
   {
-    imgSrc: "/img/projects/ravesync.jpg",
+    imgSrc: "/personal-portfolio/img/projects/ravesync.jpg",
     title: "RaveSync Mobile App",
     description: "I'm developing a modern, dynamic social media app using React Native, TypeScript, Expo, Convex, and Clerk. The app provides a seamless and interactive experience where users can filter and explore event posts based on genres and cities. The frontend is built with React Native and TypeScript, offering a smooth user interface with real-time interactions. I integrated Convex for the backend to efficiently handle and retrieve user data and posts, while Clerk manages user authentication securely. The app also includes dropdown filters for genres and cities, allowing users to customize their feed and view posts that match their preferences. This project enhanced my skills in full-stack development, including frontend mobile app design, backend API integration, and secure user management.",
     stack: "React Native, TypeScript, Clerk, Convex",
@@ -34,7 +34,7 @@ const projects = [
     dev: "",
   },
   {
-    imgSrc: "/img/projects/budget.jpg",
+    imgSrc: "/personal-portfolio/img/projects/budget.jpg",
     title: "React Budget Tracker",
     description: "Built with React JS and React-Bootstrap, this web app allows users to manage their income and expenses. The home page displays the total balance, income, and expenses. Users can navigate to separate tabs to add or delete incomes and expenses, which are stored in a local JSON file. Incomes are shown as cards with titles, descriptions, and amounts. Expenses include status options (paid or outstanding) and can be filtered accordingly. All calculations are handled in a separate JavaScript utility file.",
     stack: "React, Boostrap, JSON",
@@ -44,7 +44,7 @@ const projects = [
     dev: "https://dev.to/saradomincroft/simple-budget-tracker-app-using-react-bootstrap-2ce8",  
   },
   {
-    imgSrc: "/img/projects/djdatabass.jpg",
+    imgSrc: "/personal-portfolio/img/projects/djdatabass.jpg",
     title: "DJ DataBass",
     description: "DJ Databass is a full-stack web application built with React, Flask, and SQLAlchemy that allows users to explore and manage a directory of DJs. Users can sign up, log in, and browse DJs with filters by name, genre, subgenre, and venues played at. The app includes functionality to favorite DJs for quick access, and authenticated users can add new DJs to the database. Admin users have the additional ability to delete entries. The frontend is styled with React-Bootstrap and communicates with a Flask API backed by a relational database using SQLAlchemy.",
     stack: "React, Python, Flask, SQLAlchemy",
@@ -54,7 +54,7 @@ const projects = [
     dev: "",  
   },
   {
-    imgSrc: "/img/projects/pokedex.jpg",
+    imgSrc: "/personal-portfolio/img/projects/pokedex.jpg",
     title: "Pokedex App",
     description: "I built a responsive Pokédex web app using vanilla JavaScript that displays the original 151 Pokémon with images, types, and descriptions from the PokéAPI. Users can search by name or number, filter by type, and manage a list of favourites stored in localStorage. The UI includes hover effects, type-based color coding, and persistent state for a smooth user experience.",
     stack: "HTML, CSS, JavaScript",

@@ -56,8 +56,8 @@ const HeroSection = () => {
     <header id="home" className="flex flex-col items-center justify-center" style={{ height: "100vh" }}>
       <div className="relative w-3/4 sm:w-[500px] lg:w-[600px] z-10">
         <Image
-          src="/img/sara-catalano-logo.png"
-          // src="/personal-portfolio/img/sara-croft-logo.svg"
+          // src="/img/sara-catalano-logo.png"
+          src="/personal-portfolio/img/sara-croft-logo.svg"
           alt="My Portfolio Logo"
           width={1600}
           height={900}
@@ -98,7 +98,7 @@ const HeroSection = () => {
                   rel="noopener noreferrer"
                 >
                 <Image
-                  src="/img/icons/github-icon.svg"
+                  src="/personal-portfolio/img/icons/github-icon.svg"
                   alt="GitHub icon"
                   width={150}
                   height={150}
@@ -114,7 +114,7 @@ const HeroSection = () => {
                   rel="noopener noreferrer"
                 >
                 <Image
-                  src="/img/icons/linkedin-icon.png"
+                  src="/personal-portfolio/img/icons/linkedin-icon.png"
                   alt="LinkedIn icon"
                   width={150}
                   height={150}
@@ -130,7 +130,7 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/img/icons/dev-icon.svg"
+                  src="/personal-portfolio/img/icons/dev-icon.svg"
                   alt="Dev.to icon"
                   width={150}
                   height={150}
@@ -141,12 +141,12 @@ const HeroSection = () => {
             </div>
             <div className="relative w-[40px] h-[40px] sm:w-[64px] sm:h-[64px] cursor-pointer transition-transform duration-300 hover:scale-110 drop-shadow-[0_0_20px_#64b0db]">
               <a
-                href="/resume/sara-catalano-resume.pdf"
+                href="/personal-portfolio/resume/sara-catalano-resume.pdf"
                 download
-                title="Download CV"
+                title="Download Resume"
               >
                 <Image
-                  src="/img/icons/resume-icon.svg"
+                  src="/personal-portfolio/img/icons/resume-icon.svg"
                   alt="Download Resume"
                   width={150}
                   height={150}
@@ -167,7 +167,7 @@ const HeroSection = () => {
           className="absolute top-[8%] left-[2%] will-change-transform"
         >
           <Image
-            src="/img/astronaut.svg"
+            src="/personal-portfolio/img/astronaut.svg"
             alt="Astronaut"
             width={250}
             height={250}

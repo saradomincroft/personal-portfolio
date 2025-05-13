@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const certificates = [
-  { imgSrc: "/img/certificates/academyxi.jpg", title: "Academy Xi - Software Engineering" },
-  { imgSrc: "/img/certificates/holmesglen-prog.jpg", title: "Holmesglen - Cert IV Programming" },
-  { imgSrc: "/img/certificates/aws-intro-genai.jpg", title: "AWS - Introduction to Generative AI" },
+  { imgSrc: "/personal-portfolio/img/certificates/academyxi.jpg", title: "Academy Xi - Software Engineering" },
+  { imgSrc: "/personal-portfolio/img/certificates/holmesglen-prog.jpg", title: "Holmesglen - Cert IV Programming" },
+  { imgSrc: "/personal-portfolio/img/certificates/aws-intro-genai.jpg", title: "AWS - Introduction to Generative AI" },
 ];
 
 const Certificates = () => {
